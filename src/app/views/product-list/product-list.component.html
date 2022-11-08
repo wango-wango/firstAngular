@@ -1,0 +1,20 @@
+<div class="product-list-container">
+  <div *ngFor="let product of products" class="product-list">
+    <h3>
+      <a
+        [title]="product.name + ' details '"
+        [routerLink]="['/product', product.id]"
+      >
+        {{ product.name }}
+      </a>
+    </h3>
+    <p *ngIf="product.description">Description: {{ product.description }}</p>
+    <button type="button" (click)="share()">Share</button>
+    <!-- [product111] 為屬性名稱 -->
+    <!-- (notivy111) 為事件名稱 當此事件被觸發，就呼叫後面的函式 -->
+    <app-product-alerts
+      [product111]="product"
+      (notify111)="onNotify()"
+    ></app-product-alerts>
+  </div>
+</div>

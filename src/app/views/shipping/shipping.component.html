@@ -1,0 +1,8 @@
+<div>
+  <h1>Shipping Prices</h1>
+  <!-- 利用 async 管道修改配送元件 -->
+  <div *ngFor="let shipping of shippingCosts | async" class="shipping-item">
+    <span> {{ shipping.type }} </span>
+    <span> {{ shipping.price | currency }} </span>
+  </div>
+</div>

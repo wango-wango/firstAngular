@@ -1,1 +1,117 @@
 /* You can add global styles to this file, and also import other style files */
+/* Global Styles */
+@import 'material-icons/iconfont/material-icons.css';
+* {
+    font-family: 'Roboto', Arial, sans-serif;
+    color: #616161;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    margin: 0;
+}
+.layout{
+    display: flex;
+    width: 100%;
+    height: calc(100vh - 4rem - 2rem);
+    app-navbar{
+        width: 10%;
+    }
+    .main-container {
+        width: 90%;
+        display: flex;
+    }
+}
+
+
+router-outlet+* {
+    padding: 0 16px;
+}
+
+/* Text */
+
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+h1,
+h2 {
+    font-weight: lighter;
+}
+
+p {
+    font-size: 0.8rem;
+}
+
+/* Hyperlink */
+
+a {
+    cursor: pointer;
+    color: #1976d2;
+    text-decoration: none;
+    transition: .3s ease;
+    &:hover {
+        opacity: 0.8;
+    }
+}
+
+/* Input */
+
+input {
+    font-size: 0.8rem;
+    border-radius: 2px;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #BDBDBD;
+}
+
+label {
+    font-size: 0.7rem;
+    font-weight: bold;
+    margin-bottom: 4px;
+    display: block;
+    text-transform: uppercase;
+}
+
+/* Button */
+.button,
+button {
+    display: inline-flex;
+    align-items: center;
+    padding: 8px 16px;
+    border-radius: 2px;
+    font-size: 14px;
+    cursor: pointer;
+    background-color: #1976d2;
+    color: white;
+    border: none;
+
+    &:hover {
+        opacity: 0.8;
+        font-weight: normal;
+    }
+
+    &:disabled {
+        opacity: 0.5;
+        cursor: auto;
+    }
+}
+
+
+
+
+/*
+  Copyright Google LLC. All Rights Reserved.
+  Use of this source code is governed by an MIT-style license that
+  can be found in the LICENSE file at https://angular.io/license
+  */
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

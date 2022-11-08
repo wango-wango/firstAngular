@@ -1,0 +1,6 @@
+<!-- product111 是從父層傳來的 -->
+<div>This product Price : {{ product111.price }}</div>
+<div *ngIf="product111 && product111.price > 700">
+  <div>too expensive!!!!!!!</div>
+  <button type="button" (click)="notify111.emit()">Notify Me</button>
+</div>
