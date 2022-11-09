@@ -3,7 +3,7 @@ import { Component, OnInit } from '@angular/core';
 // ActivatedRoute 中包含有關路由和路由引數的資訊。
 import { ActivatedRoute } from '@angular/router';
 // 取得商品資料
-import { Product, products } from '../../shared/Api/products';
+import { Product, products } from '../../shared/model/vo/productList/products';
 
 // 橋接器
 import { CartService } from '../cart.service';

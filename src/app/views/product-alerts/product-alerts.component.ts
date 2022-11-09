@@ -1,5 +1,5 @@
 import { Component, OnInit, Input, Output, EventEmitter} from '@angular/core';
-import { Product } from '../../shared/Api/products';
+import { Product } from '../../shared/model/vo/productList/products';
 
 @Component({
   selector: 'app-product-alerts',

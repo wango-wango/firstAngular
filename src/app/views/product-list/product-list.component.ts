@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { products } from '../../shared/Api/products';
+import { products } from '../../shared/model/vo/productList/products';
 
 @Component({
   selector: 'app-product-list',

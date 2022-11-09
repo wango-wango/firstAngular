@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Product } from '../shared/Api/products';
+import { Product } from '../shared/model/vo/productList/products';
 import { HttpClient } from '@angular/common/http';
 
 @Injectable({
@@ -9,7 +9,7 @@ export class CartService {
   // default data
   items: Product[] = [];
 
-  // add product to items
+  // add product to items 
   addToCart(product: Product){
     this.items.push(product);
   }
